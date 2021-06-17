@@ -3,7 +3,12 @@ This repository contains PyTorch evaluation code for [Delving Deep into the Gene
 
 ## Quick Glance of Our Works
 
-![overall](https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/overall-1.png "(a)")![DA](https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/DA-1.png "(b)")
+<figure class="half">
+    <img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/overall-1.png">
+      <center>我是图片标题</center>
+    <img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/DA-1.png">
+      <center>我是图片标题</center>
+</figure>
 
 **A quick glance of our investigation observations.** (a) Investigation of IID/OOD Generalization Gap implies that ViTs generalize better than CNNs under most types of distribution shifts. (b) Combined with generalization-enhancing methods, we achieve significant performance boosts on the OOD data by 4\% compared with vanilla ViTs, and consistently outperform the corresponding CNN models. The enhanced ViTs also have smaller IID/OOD Generalization Gap than the ehhanced BiT models.
 
