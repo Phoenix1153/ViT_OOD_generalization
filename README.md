@@ -3,7 +3,7 @@ This repository contains PyTorch evaluation code for [Delving Deep into the Gene
 
 ## Quick Glance of Our Works
 <p align="middle">
-<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/overall-1.png" width="48%" title="(a)">
+<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/overall-1.png" width="48%" alt="(a)">
 <img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/DA-1.png" width="48%">
 <p>
 
