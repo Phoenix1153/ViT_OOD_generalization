@@ -1,4 +1,4 @@
-# ViT_OOD_generalization
+# Out-of-distribution Generalization Investigation in Vision Transformers
 This repository contains PyTorch evaluation code for [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts
 ](https://arxiv.org/abs/2106.07617).
 
