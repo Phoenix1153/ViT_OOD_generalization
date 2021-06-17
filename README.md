@@ -2,7 +2,7 @@
 This repository contains PyTorch evaluation code for [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](https://arxiv.org/abs/2106.07617).
 
 ## Quick Glance of Our Works
-<center class="half"><img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/overall-1.png" width="400" /><img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/DA-1.png" width="400" /></center>
+<center class="half"><img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/overall-1.png" height="400" /><img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/DA-1.png" height="400" /></center>
 
 **A quick glance of our investigation observations.** (a) Investigation of IID/OOD Generalization Gap implies that ViTs generalize better than CNNs under most types of distribution shifts. (b) Combined with generalization-enhancing methods, we achieve significant performance boosts on the OOD data by 4\% compared with vanilla ViTs, and consistently outperform the corresponding CNN models. The enhanced ViTs also have smaller IID/OOD Generalization Gap than the ehhanced BiT models.
 
