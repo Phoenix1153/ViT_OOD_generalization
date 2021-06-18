@@ -70,6 +70,8 @@ confusion matrix for the baseline model
 | real     | 50.59   | 45.81    | 84.78 | 39.31  |
 | sketch   | 52.16   | 35.27    | 48.19 | 71.92  |
 
+Above used models could be found [here](https://drive.google.com/drive/folders/1XUAIQ-TNQaG7FuvqG-Qzptn2puyGFFoQ?usp=sharing).
+
 
 ### Remarks
 
