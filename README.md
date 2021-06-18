@@ -22,6 +22,17 @@ This repository contains PyTorch evaluation code for [Delving Deep into the Gene
 - **Texture Shifts.** [Cue Conflict Stimuli](https://github.com/rgeirhos/texture-vs-shape/tree/master/stimuli/style-transfer-preprocessed-512) and [Stylized-ImageNet](https://github.com/rgeirhos/Stylized-ImageNet) are used to investigate generalization under texture shifts. Utilizing style transfer, Geirhos et al. generated Cue Conflict Stimuli benchmark with conflicting shape and texture information, that is, the image texture is replaced by another class with other object semantics preserved. In this case, we respectively report the shape and texture accuracy of classifiers for analysis. Meanwhile, Stylized-ImageNet is also produced in Geirhos et al. by replacing textures with the style of randomly selected paintings through AdaIN style transfer.
 - **Destruction Shifts.** [Random patch-shuffling](https://github.com/PKUAI26/AT-CNN) is utilized for destruction shifts to destruct images into random patches. This process can destroy long-range object information and the severity increases as the split numbers grow. In addition, we make a variant by further divide each patch into two right triangles and respectively shuffle two types of triangles. We name the process triangular patch-shuffling.
 - **Style Shifts.** [ImageNet-R](https://github.com/hendrycks/imagenet-r) and [DomainNet](http://ai.bu.edu/M3SDA/) are used for the case of style shifts. ImageNet-R contains 30000 images with various artistic renditions of 200 classes of the original ImageNet validation data set. The renditions in ImageNet-R are real-world, naturally occurring variations, such as paintings or embroidery, with textures and local image statistics which differ from those of ImageNet images. DomainNet is a recent benchmark dataset for large-scale domain adaptation that consists of 345 classes and 6 domains. As labels of some domains are very noisy, we follow the 7 distribution shift scenarios in Saito et al. with 4 domains (Real, Clipart, Painting, Sketch) picked.
+
+## Generalization-Enhanced Vision Transformers
+<p align="middle">
+<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/new_DANN-1.png" width="40%">
+<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/new_MME-1.png" width="45%">
+<p>
+<p align="middle">
+<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/new_SSL-1.png" width="90%">
+<p>
+
+**A framework overview of the three designed generalization-enhanced ViTs.** All networks use a Vision Transformer $F$ as feature encoder and a label prediction head $C$. Under this setting, the inputs to the models have labeled source examples and unlabeled target examples. **top left:** f'f **T-ADV** promotes the network to learn domain-invariant representations by introducing a domain classifier $D$ for domain adversarial training. **top right:** **T-MME** leverage the minimax process on the conditional entropy of target data to reduce the distribution gap while learning discriminative features for the task. The network uses a cosine similarity-based classifier architecture $C$ to produce class prototypes. **bottom:** **T-SSL** is an end-to-end prototype-based self-supervised learning framework. The architecture uses two memory banks $V^s$ and $V^t$ to calculate cluster centroids. A cosine classifier $C$ is used for classification in this framework.
       
 ## Citation
 If you find these investigations useful in your research, please consider citing:
