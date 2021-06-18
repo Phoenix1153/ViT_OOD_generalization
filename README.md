@@ -1,12 +1,3 @@
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-});
-</script>
-<script type="text/javascript" charset="utf-8" 
-src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,
-https://vincenttam.github.io/javascripts/MathJaxLocal.js"></script>
-
 # Out-of-distribution Generalization Investigation on Vision Transformers
 This repository contains PyTorch evaluation code for [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](https://arxiv.org/abs/2106.07617).
 
@@ -16,7 +7,7 @@ This repository contains PyTorch evaluation code for [Delving Deep into the Gene
 <img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/DA-1.png" width="48%">
 <p>
 
-**A quick glance of our investigation observations.** **left:** Investigation of IID/OOD Generalization Gap implies that ViTs generalize better than CNNs under most types of distribution shifts. **right:** Combined with generalization-enhancing methods, we achieve significant performance boosts on the OOD data by 4\% compared with vanilla ViTs, and consistently outperform the corresponding CNN models. The enhanced ViTs also have smaller IID/OOD Generalization Gap than the ehhanced BiT models.
+**A quick glance of our investigation observations.** **left:** Investigation of IID/OOD Generalization Gap implies that ViTs generalize better than CNNs under most types of distribution shifts. **right:** Combined with generalization-enhancing methods, we achieve significant performance boosts on the OOD data by 4% compared with vanilla ViTs, and consistently outperform the corresponding CNN models. The enhanced ViTs also have smaller IID/OOD Generalization Gap than the ehhanced BiT models.
 
 ## Taxonomy of Distribution Shifts
 <p align="middle">
