@@ -33,7 +33,50 @@ This repository contains PyTorch evaluation code for [Delving Deep into the Gene
 <p>
 
 **A framework overview of the three designed generalization-enhanced ViTs.** All networks use a Vision Transformer <img src="http://latex.codecogs.com/gif.latex?F" /> as feature encoder and a label prediction head <img src="http://latex.codecogs.com/gif.latex?C" /> . Under this setting, the inputs to the models have labeled source examples and unlabeled target examples. **top left:** **T-ADV** promotes the network to learn domain-invariant representations by introducing a domain classifier <img src="http://latex.codecogs.com/gif.latex?D" /> for domain adversarial training. **top right:** **T-MME** leverage the minimax process on the conditional entropy of target data to reduce the distribution gap while learning discriminative features for the task. The network uses a cosine similarity-based classifier architecture <img src="http://latex.codecogs.com/gif.latex?C" />  to produce class prototypes. **bottom:** **T-SSL** is an end-to-end prototype-based self-supervised learning framework. The architecture uses two memory banks <img src="http://latex.codecogs.com/gif.latex?V^s" /> and <img src="http://latex.codecogs.com/gif.latex?V^t" /> to calculate cluster centroids. A cosine classifier <img src="http://latex.codecogs.com/gif.latex?C" />  is used for classification in this framework.
-      
+
+
+## Run Our Code
+## Environment Installation
+>     conda create -n vit python=3.6
+>     conda activate vit
+>     conda install pytorch==1.4.0 torchvision==0.5.0 cudatoolkit=10.0 -c pytorch
+
+## Before Running
+
+>     conda activate vit
+>     PYTHONPATH=$PYTHONPATH:.
+
+## Evaluation
+
+>     CUDA_VISIBLE_DEVICES=0 python main.py \
+>     --model deit_small_b16_384 \
+>     --num-classes 345 \
+>     --checkpoint data/checkpoints/deit_small_b16_384_baseline_real.pth.tar \
+>     --meta-file data/metas/DomainNet/sketch_test.jsonl \
+>     --root-dir data/images/DomainNet/sketch/test
+
+## Experimental Results
+
+### DomainNet
+
+#### DeiT\_small\_b16\_384
+
+confusion matrix for the baseline model
+
+|          | clipart | painting | real  | sketch |
+| -------- | ------- | -------- | ----- | ------ |
+| clipart  | 80.25   | 33.75    | 55.26 | 43.43  |
+| painting | 36.89   | 75.32    | 52.08 | 31.14  |
+| real     | 50.59   | 45.81    | 84.78 | 39.31  |
+| sketch   | 52.16   | 35.27    | 48.19 | 71.92  |
+
+
+### Remarks
+
+- These results may slightly differ from those in our paper due to differences of the environments.
+
+- We will continuously update this repo.
+
 ## Citation
 If you find these investigations useful in your research, please consider citing:
 ```
