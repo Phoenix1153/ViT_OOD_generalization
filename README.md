@@ -11,7 +11,7 @@ This repository contains PyTorch evaluation code for [Delving Deep into the Gene
 
 ## Taxonomy of Distribution Shifts
 <p align="middle">
-<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/-1.png" width="80%">
+<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/demo-1.png" width="80%">
 <p>
 
 **Illustration of our taxonomy of distribution shifts.** We build the taxonomy upon what kinds of semantic concepts are modified from the original image. We divide the distribution shifts into five cases: background shifts, corruption shifts, texture shifts, destruction shifts, and style shifts. We apply the proxy $\mathcal{A}$-distance (PAD) as an empirical measurement of distribution shifts. We select a representative sample of each distribution shift type and rank them by their PAD values (illustrated nearby the stars), respectively. Please refer to the literature for details.
