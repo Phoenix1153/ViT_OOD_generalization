@@ -1,7 +1,7 @@
 # Out-of-distribution Generalization Investigation on Vision Transformers
 This repository contains PyTorch evaluation code for [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](https://arxiv.org/abs/2106.07617).
 
-## Quick Glance of Our Works
+## A Quick Glance of Our Works
 <p align="middle">
 <img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/overall-1.png" width="48%" alt="(a)">
 <img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/DA-1.png" width="48%" alt="(a)">
@@ -9,6 +9,9 @@ This repository contains PyTorch evaluation code for [Delving Deep into the Gene
 
 **A quick glance of our investigation observations.** **left:** Investigation of IID/OOD Generalization Gap implies that ViTs generalize better than CNNs under most types of distribution shifts. **right:** Combined with generalization-enhancing methods, we achieve significant performance boosts on the OOD data by 4\% compared with vanilla ViTs, and consistently outperform the corresponding CNN models. The enhanced ViTs also have smaller IID/OOD Generalization Gap than the ehhanced BiT models.
 
+## Taxonomy of Distribution Shifts
+
+      
 ## Citation
 If you find these investigations useful in your research, please consider citing:
 ```
