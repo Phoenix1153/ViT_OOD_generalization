@@ -1,6 +1,5 @@
 # Out-of-distribution Generalization Investigation on Vision Transformers
 
-## Run Our Code
 ## Environment Installation
 >     conda create -n vit python=3.6
 >     conda activate vit
