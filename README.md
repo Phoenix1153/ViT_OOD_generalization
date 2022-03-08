@@ -1,20 +1,12 @@
 # Out-of-distribution Generalization Investigation on Vision Transformers
 This repository contains PyTorch evaluation code for _CVPR 2022_ accepted paper [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](https://arxiv.org/abs/2106.07617).
 
-## A Quick Glance of Our Work
-<p align="middle">
-<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/overall-1.png" width="48%">
-<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/DA-1.png" width="48%">
-<p>
-
-**A quick glance of our investigation observations.** **left:** Investigation of IID/OOD Generalization Gap implies that ViTs generalize better than CNNs under most types of distribution shifts. **right:** Combined with generalization-enhancing methods, we achieve significant performance boosts on the OOD data by 4% compared with vanilla ViTs, and consistently outperform the corresponding CNN models. The enhanced ViTs also have smaller IID/OOD Generalization Gap than the ehhanced BiT models.
-
 ## Taxonomy of Distribution Shifts
 <p align="middle">
 <img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/demo-1.png" width="80%">
 <p>
 
-**Illustration of our taxonomy of distribution shifts.** We build the taxonomy upon what kinds of semantic concepts are modified from the original image. We divide the distribution shifts into five cases: background shifts, corruption shifts, texture shifts, destruction shifts, and style shifts. We apply the proxy <img src="http://latex.codecogs.com/gif.latex?\mathcal{A}" />-distance (PAD) as an empirical measurement of distribution shifts. We select a representative sample of each distribution shift type and rank them by their PAD values (illustrated nearby the stars), respectively. Please refer to the literature for details.
+**Illustration of our taxonomy of distribution shifts.** We build the taxonomy upon what kinds of semantic concepts are modified from the original image and divide the distribution shifts into four cases: background shifts, corruption shifts, texture shifts, and style shifts. <font color=#008000>$\checkmark$</font> denotes the unmodified vision cues under certain type of distribution shifts. Please refer to the literature for details.
 
 ### Datasets Used for Investigation
 - **Background Shifts.** [ImageNet-9](https://github.com/MadryLab/backgrounds_challenge/releases) is adopted for background shifts. ImageNet-9 is a variety of 9-class datasets with different foreground-background recombination plans, which helps disentangle the impacts of foreground and background signals on classification. In our case, we use the four varieties of generated background with foreground unchanged, including 'Only-FG', 'Mixed-Same', 'Mixed-Rand' and 'Mixed-Next'. The 'Original' data set is used to represent in-distribution data.
