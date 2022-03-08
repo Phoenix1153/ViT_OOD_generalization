@@ -1,5 +1,5 @@
 # Out-of-distribution Generalization Investigation on Vision Transformers
-This repository contains PyTorch evaluation code for [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](https://arxiv.org/abs/2106.07617).
+This repository contains PyTorch evaluation code for _CVPR 2022_ accepted paper [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](https://arxiv.org/abs/2106.07617).
 
 ## A Quick Glance of Our Work
 <p align="middle">
