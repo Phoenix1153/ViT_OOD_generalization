@@ -73,13 +73,11 @@ Above used models could be found [here](https://drive.google.com/drive/folders/1
 ## Citation
 If you find these investigations useful in your research, please consider citing:
 ```
-@misc{zhang2021delving,  
-      title={Delving Deep into the Generalization of Vision Transformers under Distribution Shifts}, 
-      author={Chongzhi Zhang and Mingyuan Zhang and Shanghang Zhang and Daisheng Jin and Qiang Zhou and Zhongang Cai and Haiyu Zhao and Shuai Yi and Xianglong Liu and Ziwei Liu},  
-      year={2021},  
-      eprint={2106.07617},  
-      archivePrefix={arXiv},  
-      primaryClass={cs.CV}  
+@article{zhang2021delving,
+  title={Delving deep into the generalization of vision transformers under distribution shifts},
+  author={Zhang, Chongzhi and Zhang, Mingyuan and Zhang, Shanghang and Jin, Daisheng and Zhou, Qiang and Cai, Zhongang and Zhao, Haiyu and Yi, Shuai and Liu, Xianglong and Liu, Ziwei},
+  journal={arXiv preprint arXiv:2106.07617},
+  year={2021}
 }
 ```
 
