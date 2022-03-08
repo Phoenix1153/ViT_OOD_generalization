@@ -3,7 +3,7 @@ This repository contains PyTorch evaluation code for _CVPR 2022_ accepted paper 
 
 ## Taxonomy of Distribution Shifts
 <p align="middle">
-<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/demo-1.png" width="80%">
+<img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/taxonomy.png" width="80%">
 <p>
 
 **Illustration of our taxonomy of distribution shifts.** We build the taxonomy upon what kinds of semantic concepts are modified from the original image and divide the distribution shifts into four cases: background shifts, corruption shifts, texture shifts, and style shifts. <img src="http://latex.codecogs.com/gif.latex?{\color{Red} \checkmark}" /> denotes the unmodified vision cues under certain type of distribution shifts. Please refer to the literature for details.
