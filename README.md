@@ -6,7 +6,7 @@ This repository contains PyTorch evaluation code for _CVPR 2022_ accepted paper 
 <img src="https://github.com/Phoenix1153/ViT_OOD_generalization/raw/main/img/demo-1.png" width="80%">
 <p>
 
-**Illustration of our taxonomy of distribution shifts.** We build the taxonomy upon what kinds of semantic concepts are modified from the original image and divide the distribution shifts into four cases: background shifts, corruption shifts, texture shifts, and style shifts. <font color=#008000>$\checkmark$</font> denotes the unmodified vision cues under certain type of distribution shifts. Please refer to the literature for details.
+**Illustration of our taxonomy of distribution shifts.** We build the taxonomy upon what kinds of semantic concepts are modified from the original image and divide the distribution shifts into four cases: background shifts, corruption shifts, texture shifts, and style shifts. <font color=#008000>√</font> denotes the unmodified vision cues under certain type of distribution shifts. Please refer to the literature for details.
 
 ### Datasets Used for Investigation
 - **Background Shifts.** [ImageNet-9](https://github.com/MadryLab/backgrounds_challenge/releases) is adopted for background shifts. ImageNet-9 is a variety of 9-class datasets with different foreground-background recombination plans, which helps disentangle the impacts of foreground and background signals on classification. In our case, we use the four varieties of generated background with foreground unchanged, including 'Only-FG', 'Mixed-Same', 'Mixed-Rand' and 'Mixed-Next'. The 'Original' data set is used to represent in-distribution data.
