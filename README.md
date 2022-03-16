@@ -1,10 +1,3 @@
-<style>
-table
-{
-    margin: auto;
-}
-</style>
-
 # Out-of-distribution Generalization Investigation on Vision Transformers
 This repository contains PyTorch evaluation code for _CVPR 2022_ accepted paper [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](https://arxiv.org/abs/2106.07617).
 
@@ -28,12 +21,14 @@ We build _OOD-Net_, a collection constituted of data under four types of distrib
 |  ImageNet-R            |    Style Shift       |
 |  DomainNet             |    Style Shift       |
 
+<!--
 Please also cite these references when exploiting the collection.
 - [1] Kai Yuanqing Xiao, Logan Engstrom, Andrew Ilyas, and Aleksander Madry. Noise or signal: The role of image backgrounds in object recognition. In International Conference on Learning Representations, 2021.
 - [2] Dan Hendrycks and Thomas Dietterich. Benchmarking neural network robustness to common corruptions and perturbations. In International Conference on Learning Representations, 2019.
 - [3] Robert Geirhos, Patricia Rubisch, Claudio Michaelis, Matthias Bethge, Felix A. Wichmann, and Wieland Brendel. Imagenet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness. In International Conference on Learning Representations, 2019.
 - [4] Dan Hendrycks, Steven Basart, Norman Mu, Saurav Kadavath, Frank Wang, Evan Dorundo, Rahul Desai, Tyler Zhu, Samyak Parajuli, Mike Guo, Dawn Song, Jacob Steinhardt, and Justin Gilmer. The many faces of robustness: A critical analysis of out-of-distribution generalization. In International Conference on Computer Vision, pages 8320–8329, 2021.
 - [5] Xingchao Peng, Qinxun Bai, Xide Xia, Zijun Huang, Kate Saenko, and Bo Wang. Moment matching for multi-source domain adaptation. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 1406–1415, 2019.
+-->
   
 <!--
 - **Background Shifts.** [ImageNet-9](https://github.com/MadryLab/backgrounds_challenge/releases) is adopted for background shifts. ImageNet-9 is a variety of 9-class datasets with different foreground-background recombination plans, which helps disentangle the impacts of foreground and background signals on classification. In our case, we use the four varieties of generated background with foreground unchanged, including 'Only-FG', 'Mixed-Same', 'Mixed-Rand' and 'Mixed-Next'. The 'Original' data set is used to represent in-distribution data.
