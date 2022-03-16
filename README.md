@@ -10,7 +10,7 @@ This repository contains PyTorch evaluation code for _CVPR 2022_ accepted paper 
 
 ## Dataset
 
-We build _OOD-Net_, a collection constituted of data under four types of distribution shift and their in-distribution counterparts, for comprehensive investigation into model out-out-distribution generalization properties. The download link is [here](https://github.com/MadryLab/backgrounds_challenge/releases).
+We build _OOD-Net_, a collection constituted of data under four types of distribution shift and their in-distribution counterparts, for comprehensive investigation into model out-out-distribution generalization properties. The download link will be available soon.
 
 |  Dataset               |    Shift Type        |
 | :--------------------: | :------------------: |
@@ -21,6 +21,13 @@ We build _OOD-Net_, a collection constituted of data under four types of distrib
 |  ImageNet-R            |    Style Shift       |
 |  DomainNet             |    Style Shift       |
 
+Please also cite these references when utilizaing the collection.
+- [1] Kai Yuanqing Xiao, Logan Engstrom, Andrew Ilyas, and Aleksander Madry. Noise or signal: The role of image backgrounds in object recognition. In International Conference on Learning Representations, 2021.
+- [2] Dan Hendrycks and Thomas Dietterich. Benchmarking neural network robustness to common corruptions and perturbations. In International Conference on Learning Representations, 2019.
+- [3] Robert Geirhos, Patricia Rubisch, Claudio Michaelis, Matthias Bethge, Felix A. Wichmann, and Wieland Brendel. Imagenet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness. In International Conference on Learning Representations, 2019.
+- [4] Dan Hendrycks, Steven Basart, Norman Mu, Saurav Kadavath, Frank Wang, Evan Dorundo, Rahul Desai, Tyler Zhu, Samyak Parajuli, Mike Guo, Dawn Song, Jacob Steinhardt, and Justin Gilmer. The many faces of robustness: A critical analysis of out-of-distribution generalization. In International Conference on Computer Vision, pages 8320–8329, 2021.
+- [5] Xingchao Peng, Qinxun Bai, Xide Xia, Zijun Huang, Kate Saenko, and Bo Wang. Moment matching for multi-source domain adaptation. In Proceedings of the IEEE/CVF International Conference on Computer Vision, pages 1406–1415, 2019.
+  
 <!--
 - **Background Shifts.** [ImageNet-9](https://github.com/MadryLab/backgrounds_challenge/releases) is adopted for background shifts. ImageNet-9 is a variety of 9-class datasets with different foreground-background recombination plans, which helps disentangle the impacts of foreground and background signals on classification. In our case, we use the four varieties of generated background with foreground unchanged, including 'Only-FG', 'Mixed-Same', 'Mixed-Rand' and 'Mixed-Next'. The 'Original' data set is used to represent in-distribution data.
 - **Corruption Shifts.** [ImageNet-C](https://zenodo.org/record/2235448#.YMwT5JMzalY) is used to examine generalization ability under corruption shifts. ImageNet-C includes 15 types of algorithmically generated corruptions, grouped into 4 categories: ‘noise’, ‘blur’, ‘weather’, and ‘digital’. Each corruption type has five levels of severity, resulting in 75 distinct corruptions.
