@@ -1,3 +1,10 @@
+<style>
+table
+{
+    margin: auto;
+}
+</style>
+
 # Out-of-distribution Generalization Investigation on Vision Transformers
 This repository contains PyTorch evaluation code for _CVPR 2022_ accepted paper [Delving Deep into the Generalization of Vision Transformers under Distribution Shifts](https://arxiv.org/abs/2106.07617).
 
@@ -21,7 +28,7 @@ We build _OOD-Net_, a collection constituted of data under four types of distrib
 |  ImageNet-R            |    Style Shift       |
 |  DomainNet             |    Style Shift       |
 
-Please also cite these references when utilizaing the collection.
+Please also cite these references when exploiting the collection.
 - [1] Kai Yuanqing Xiao, Logan Engstrom, Andrew Ilyas, and Aleksander Madry. Noise or signal: The role of image backgrounds in object recognition. In International Conference on Learning Representations, 2021.
 - [2] Dan Hendrycks and Thomas Dietterich. Benchmarking neural network robustness to common corruptions and perturbations. In International Conference on Learning Representations, 2019.
 - [3] Robert Geirhos, Patricia Rubisch, Claudio Michaelis, Matthias Bethge, Felix A. Wichmann, and Wieland Brendel. Imagenet-trained CNNs are biased towards texture; increasing shape bias improves accuracy and robustness. In International Conference on Learning Representations, 2019.
