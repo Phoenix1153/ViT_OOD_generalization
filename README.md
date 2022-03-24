@@ -10,7 +10,7 @@ This repository contains PyTorch evaluation code for _CVPR 2022_ accepted paper 
 
 ## Dataset
 
-We build _OOD-Net_, a collection constituted of data under four types of distribution shift and their in-distribution counterparts, for comprehensive investigation into model out-out-distribution generalization properties. The download link will be available soon.
+We build _OOD-Net_, a collection constituted of data under four types of distribution shift and their in-distribution counterparts, for comprehensive investigation into model out-out-distribution generalization properties. The download link is available [here](https://pan.baidu.com/s/12eYOzdHxMm4j41jwwzCfAw?pwd=3579).
 
 |  Dataset               |    Shift Type        |
 | :--------------------: | :------------------: |
